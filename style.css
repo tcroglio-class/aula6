@@ -1,0 +1,71 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    text-align: center;
+
+    .buttonPulse {
+        font-size: 50px;
+        position: absolute;
+        top: 45%;
+        left: 20%;
+        animation: pulse 2s infinite ease-in-out;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .buttonRotate {
+        font-size: 50px;
+        position: absolute;
+        top: 45%;
+        left: 60%;
+        animation: rotate 2s infinite linear;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: red;
+        color: gold;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        background-color: red;
+        color: gold;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
